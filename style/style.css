@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Raleway:wght@500&family=Roboto&display=swap');
+:root{
+    --primary-blue: rgb(40, 118, 182);
+    --secondary-blue: rgb(169, 193, 224);
+    --primary-white: #fff;
+    --primary-dark: #000;
+    --primary-background: rgb(224, 220, 220);
+    --primary-gray : rgb(65, 65, 65);
+    --secondary-gray: rgb(231, 231, 231);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    position: fixed;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    font-family: 'Robto', sans-serif;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 25px 100px;
+    z-index: 100000;
+}
+header .nom{
+    position: relative;
+    display: flex;
+    text-decoration:none;
+    font-size: 2em;
+    color:var(--primary-dark);
+    font-family: 'Acme', sans-serif;
+}
+header .nav{
+    position: relative;
+    left: -8rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul{
+    position: relative;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    display: flex;
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    color: var(--primary-dark);
+    margin: 0px 15px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.sticky{
+    padding: 0px 100px;
+    background-color: var(--secondary-blue);
+}
+
+.h{
+    display:flex;
+    flex-direction: row;
+    background-color: var(--secondry-gray);
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    
+    top:5rem;
+}
+.h-left{
+    justify-content: center;
+    padding: 9rem 4rem 9rem 0;
+    align-items: center;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.h-left .pres{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+}
+.h-left .pres .pres-name{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 800;
+    padding: 2rem 1rem 2rem 0;
+}
+.h-text{
+    font-size: 2.3em;
+}
+.h-more{
+    text-decoration: none;
+    font-size: 1.3em;
+    position: relative;
+    top: 5rem;
+}
+.h .bc{
+    width:50%;
+    height: 100vh;
+    position: absolute;
+    top: -5rem;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+    z-index: -1;
+    background: #3232ff;
+    background: linear-gradient(286deg,#3232ff 0%, #bccff8 80%);
+    background: -webkit-linear-gradient(286deg,#3232ff 0%, #bccff8 80%);
+    background: -moz-linear-gradient(286deg,#3232ff 0%, #bccff8 80%);
+}
+.h-right{
+    width: 45%;
+    align-items: center;
+}
+.h-right{
+    padding: 5rem 2rem;
+}
+.h-right img{
+    width: 100%;
+    height: 100%;
+   /* margin: 5rem 2rem;*/
+    -webkit-box-shadow: 8px 10px 24px -2px rgba(8,37,255,0.82); 
+box-shadow: 8px 10px 24px -2px rgba(8,37,255,0.82);
+}
+
+
+.a{
+    padding: 2rem;
+    height: 100vh;
+
+    background-color: var(--secondary-gray);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; 
+}
+.a h1{
+    color: var(--primary-blue);
+    font-size: 3.5em;
+}
+.a h2{
+    font-family: 'Acme', sans-serif;
+    font-size: 2em;
+}
+.a .a-name{
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+.a .a-content{
+    font-size: 1.3em;
+    padding: 3rem 1rem;
+    width: 40%;
+}
+.a .a-content h2{
+    margin-bottom: 3rem;
+}
+.p{
+    background-color: var(--secondary-gray);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+    justify-content: center;
+    align-items: center;
+}
+.p h1{
+    color: var(--primary-blue);
+    font-size: 3.5em;
+    margin-bottom: 3rem;
+}
+.p .p-content{
+    border-left: 3px solid var(--primary-gray);
+    padding: 0 3rem;
+    width: 45%;
+    position: relative;
+    left: 7rem;
+}
+.p-content ul{
+    list-style-type: none;
+}
+.p-content ul li{
+    margin-bottom: 3rem;
+}
+.p-year{
+    background-color: var(--primary-gray);
+    color: var(--secondary-gray);
+    font-weight: 800;
+    border-radius: 50%;
+    font-size: 1.2em;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.p-content #y1{
+    position: absolute;
+    top: -1.5rem;
+    left: -2.65rem;
+}
+.p-content #y2{
+    position: absolute;
+    top: 6rem;
+    left: -2.65rem;
+}
+.p-content #y3{
+    position: absolute;
+    top: 11.5rem;
+    left: -2.65rem;
+}
+.c{
+    background-color: var(--secondary-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.c h1{
+    color: var(--primary-blue);
+    font-size: 3.5em;
+    justify-content: center;
+}
+.pr{
+    background-color: var(--secondary-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pr h1{
+    color: var(--primary-blue);
+    font-size: 3.5em;
+    justify-content: center;
+}
+.ct{
+    background-color: var(--secondary-gray);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ct h1{
+    color: var(--primary-blue);
+    font-size: 3.5em;
+    justify-content: center;
+}
+.f{
+    padding: 1rem;
+    color: var(--primary-dark);
+    background-color: var(--primary-gray);
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.f-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+.f-left h2{
+    color: #aaa;
+}
+.f-left ul{
+    padding: 2rem 0;
+list-style-type: none;
+display: flex;
+flex-direction: row;
+}
+.f-left ul li{
+    padding: 0 1rem;
+}
+.f-left ul li img{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.f-cp{
+    text-align: center;
+    font-size:1.3em;
+}
+.f-right{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1em;
+}
+.f-right ul{
+    list-style-type: none;
+}
+.f-right ul li{
+    padding: 0.8rem 0;
+}
+.f-right ul li img{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+.f-right ul li span{
+    margin: 0 1.5rem;
+    position: relative;
+    top: -1rem;
+}
+.f-right ul li div{
+    display: flex;
+    flex-direction: row;
+}
