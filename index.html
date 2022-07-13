@@ -15,7 +15,7 @@
     <a href="#" class="nom">Nirina</a>
     <div class="nav">
       <ul>
-        <li><a href="#a">A propos</a></li>
+        <li><a href="#a">À propos</a></li>
         <li><a href="#p">Parcours</a></li>
         <li><a href="#c">Compétences</a></li>
         <li><a href="#pr">Projets</a></li>
@@ -50,7 +50,7 @@
 
   <!-- A propos -->
   <div id="a" class="a">
-    <h1>A propos de moi</h1>
+    <h1>À propos de moi</h1>
     <div class="a-content">
       <h2>Qui suis-je?</h2>
       <p>
@@ -95,7 +95,53 @@
   </div>
   <!-- Compétences -->
   <div class="c" id="c">
-    <h1>Compétences</h1>
+    <h1>Mes Compétences</h1>
+    <h2>Qu'est-ce que je sais?</h2>
+    <div class="c-menu">
+      <ul>
+        <li><a href="javascript: showSkill('dev','lg','hb')">Programmation</a></li>
+        <li><a href="javascript: showSkill('lg','dev','hb')">Langues</a></li>
+        <li><a href="javascript: showSkill('hb','lg','dev')">Loisirs  </a></li>
+      </ul>
+    </div>
+    
+    <div class="c-dev" style="display:display;" id="dev">
+      <div class="im"><img src="img/dev.svg" alt="dev"></div>
+      <div class="c-hd"><span class="c-title">Les langages de programmation</span></div>
+      <ul>
+        <li>
+          <div id="bar-html" class="bar">
+            <span class="bar-text">HTML &nbsp;-&nbsp;  70%</span>
+          </div>
+        </li>
+        <li>
+          <div id="bar-css" class="bar">
+          <span class="bar-text">CSS &nbsp;-&nbsp;  70%</span>
+        </div>
+      </li>
+        <li>
+          <div id="bar-js" class="bar">
+            <span class="bar-text">Javascript  &nbsp;- &nbsp;50%</span>
+          </div>
+        </li>
+        <li>
+          <div id="bar-java" class="bar">
+            <span class="bar-text">Java  &nbsp;-&nbsp;  60%</span>
+          </div>
+        </li>
+        <li>
+          <div id="bar-c" class="bar">
+            <span class="bar-text">C/C++ &nbsp;-&nbsp;  75%</span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="c-lg" id="lg">
+      langues
+    </div>
+    <div class="c-hb" id="hb">
+      loisirs
+    </div>
   </div>
   <!-- Projets -->
   <div class="pr" id="pr">
